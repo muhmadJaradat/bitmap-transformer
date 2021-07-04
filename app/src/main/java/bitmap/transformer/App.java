@@ -15,10 +15,15 @@ public class App {
 
     public static void main(String[] args) {
 
-        String inputFilePath = "app/src/main/resources/" + args[0] + ".bmp";
-        String outputFilePath = "app/src/main/resources/" + args[1] + ".bmp";
+// System.out.println(args[0]);
+// System.out.println(args[1]);
+// System.out.println(args[2]);
+        String inputFilePath = "src/main/resources/" + args[0] + ".bmp";
+        
+        String outputFilePath = "src/main/resources/" + args[1] + ".bmp";
         String transform = args[2].toLowerCase();
         Bitmap bitmap = null;
+
 
         // Try to read in file from CLI argument
         try {
